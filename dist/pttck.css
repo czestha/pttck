@@ -921,7 +921,7 @@ button, .bs-yellow, .bs-red {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: blue;
+  background-color: green;
 }
 
 .bs-yellow {

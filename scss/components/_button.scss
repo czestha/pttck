@@ -22,7 +22,7 @@ button {
 .bs-red:hover {
 	@include transition3;
 	//background-color: darken($red, 10%);
-	background-color: blue;
+	background-color: green;
 }
 
 .bs-yellow {
