@@ -1,34 +1,3 @@
 @use '../abstract/' as *;
-:root {
-	--header-height: 6rem;
-}
 
-header {
-	grid-area: hlavicka;
-	height: var(--header-height);
-	position: sticky;
-	top: 0;
-	background: white;
-	z-index: 90; // pro správné fungování odkazů
-	box-shadow: rgba(0, 0, 0, 0.2) 0 0 8px;
-}
-
-
-.header-container {
-	display: flex;
-	align-items: center;
-	height: 100%;
-}
-.header-logo {
-	display: flex;
-	align-items: center;
-	font-weight: 600;
-	font-size: 2rem;
-}
-.header-content {
-	width: 100%;
-	display: flex;
-	justify-content: end;
-	align-items: center;
-}
 
