@@ -1,0 +1,60 @@
+@use '../abstract/' as *;
+
+// MARGIN
+.mt-05 {	margin-top: .5rem; }
+.mt-10 {	margin-top: 1rem; }
+.mt-15 {	margin-top: 1.5rem; }
+.mt-20 {	margin-top: 2rem; }
+.mt-25 {	margin-top: 2.5rem; }
+.mt-30 {	margin-top: 3rem; }
+.mt-40 {	margin-top: 4rem; }
+.mt-sm-00 { @include respond-to('min-sm') { margin-top: 0; } }
+.mt-md-00 { @include respond-to('min-md') { margin-top: 0; } }
+.mt-lg-00 { @include respond-to('min-lg') { margin-top: 0; } }
+.mt-xl-00 { @include respond-to('min-xl') { margin-top: 0; } }
+
+
+.me-05 {	margin-right: .5rem; }
+.me-10 {	margin-right: 1rem; }
+.me-15 {	margin-right: 1.5rem; }
+.me-20 {	margin-right: 2rem; }
+.me-25 {	margin-right: 2.5rem; }
+.me-30 {	margin-right: 3rem; }
+
+
+// Margin BOTTOM
+.mb-00 {	margin-bottom: 0!important; }
+.mb-02 {	margin-bottom: .2rem!important; }
+.mb-05 {	margin-bottom: .5rem!important; }
+.mb-10 {	margin-bottom: 1rem!important; }
+.mb-15 {	margin-bottom: 1.5rem!important; }
+.mb-20 {	margin-bottom: 2rem!important; }
+.mb-25 {	margin-bottom: 2.5rem!important; }
+.mb-30 {	margin-bottom: 3rem!important; }
+
+.mb-md-10 { @include respond-to('min-md') { margin-bottom: 1rem; } }
+
+
+
+.ms-05 {	margin-left: .5rem; }
+.ms-10 {	margin-left: 1rem; }
+.ms-15 {	margin-left: 1.5rem; }
+.ms-20 {	margin-left: 2rem; }
+.ms-25 {	margin-left: 2.5rem; }
+.ms-30 {	margin-left: 3rem; }
+
+.my-05 {	margin: .5rem 0; }
+.my-10 {	margin: 1rem 0; }
+.my-15 {	margin: 1.5rem 0; }
+.my-20 {	margin: 2rem 0; }
+.my-25 {	margin: 2.5rem 0; }
+.my-30 {	margin: 3rem 0; }
+
+.mx-05 {	margin: 0 .5rem; }
+.mx-10 {	margin: 0 1rem; }
+.mx-15 {	margin: 0 1.5rem; }
+.mx-20 {	margin: 0 2rem; }
+.mx-25 {	margin: 0 2.5rem; }
+.mx-30 {	margin: 0 3rem; }
+
+.mx-auto { margin: 0 auto}

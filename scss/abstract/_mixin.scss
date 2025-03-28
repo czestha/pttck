@@ -1,0 +1,161 @@
+@use 'variables' as *;
+
+@mixin primary-font {
+    font-family: $default-font;
+}
+@mixin secondary-font {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+}
+
+@mixin main-background {
+    background: whitesmoke;
+    height: 100%;
+}
+@mixin main-padding {
+    padding: 1rem;
+}
+
+
+// Nastavení logiky responzibility pro respond-to
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == 'xs' {
+        @media (max-width: $sm - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'max-sm' {
+        @media only screen and (max-width: $sm - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'sm' {
+        @media (min-width: $sm) and (max-width: $md - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'min-sm' {
+        @media (min-width: $sm) {
+            @content;
+        }
+    } @else if $breakpoint == 'max-md' {
+        @media only screen and (max-width: $md - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'md' {
+        @media (min-width: $md) and (max-width: $lg - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'min-md' {
+        @media (min-width: $md) {
+            @content;
+        }
+    } @else if $breakpoint == 'max-lg' {
+        @media only screen and (max-width: $lg - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'lg' {
+        @media (min-width: $lg) and (max-width: $xl - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'min-lg' {
+        @media (min-width: $lg) {
+            @content;
+        }
+    } @else if $breakpoint == 'max-xl' {
+        @media only screen and (max-width: $xl - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'xl' {
+        @media (min-width: $xl) and (max-width: $xxl - 0.02px) {
+            @content;
+        }
+    } @else if $breakpoint == 'min-xl' {
+        @media (min-width: $xl) {
+            @content;
+        }
+    } @else if $breakpoint == 'xxl' {
+        @media (min-width: $xxl) {
+            @content;
+        }
+    }
+}
+
+// Definujeme klíčové snímky pro animaci "beat"
+
+// Použití mixinu na konkrétní třídu
+.beating {
+    animation: fa-beat 2.5s infinite;
+    display: inline-block;
+    color: red;
+}
+@keyframes fa-beat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@mixin  transition1 (){
+    -webkit-transition: all 0.1s ease;
+    -moz-transition   : all 0.1s ease;
+    -ms-transition    : all 0.1s ease;
+    -o-transition     : all 0.1s ease;
+    transition        : all 0.1s ease;
+}
+
+@mixin  transition3 (){
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+@mixin  transition5 (){
+    -webkit-transition: all 0.5s ease;
+    -moz-transition   : all 0.5s ease;
+    -ms-transition    : all 0.5s ease;
+    -o-transition     : all 0.5s ease;
+    transition        : all 0.5s ease;
+}
+
+@mixin  transition6 (){
+    -webkit-transition: all 0.6s ease;
+    -moz-transition   : all 0.6s ease;
+    -ms-transition    : all 0.6s ease;
+    -o-transition     : all 0.6s ease;
+    transition        : all 0.6s ease;
+}
+
+
+@mixin form-input-style {
+    border: 1px solid lightgray;
+    background: white;
+    color: whitesmoke;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 6px;
+    padding: 10px 10px;
+    width: 100%;
+    &:focus {
+        //@include transition3;
+        border-color: $blue;
+    }
+    &:active {
+        //@include transition3;
+        border-color: $blue;
+    }
+}

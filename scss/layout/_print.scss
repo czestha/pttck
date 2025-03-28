@@ -1,0 +1,10 @@
+@use '../abstract/' as *;
+
+@media print {
+	.flex-print-column {
+		flex-direction: column !important;
+	}
+	.flex-print-row {
+		flex-direction: row !important;
+	}
+}

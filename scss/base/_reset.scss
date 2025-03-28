@@ -1,0 +1,74 @@
+@use '../abstract/' as *;
+
+/* Reset pro všechny elementy */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+/* Reset pro textové elementy */
+body {
+	line-height: 1.5;
+	font-family: Arial, sans-serif; /* Můžeš změnit podle potřeby */
+}
+
+/* Základní nastavení pro obrázky a videa */
+img,
+picture,
+video,
+iframe,
+embed,
+object {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Základní nastavení pro seznamy */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Základní nastavení pro odkazy */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Základní nastavení pro tabulky */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Formulářové elementy */
+input,
+button,
+textarea,
+select {
+	border: none;
+	outline: none;
+	background: none;
+	font: inherit;
+}
+
+/* Reset pro hlavičky */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Reset pro blockquote */
+blockquote {
+	margin: 0;
+	padding: 0;
+	quotes: none;
+}
+

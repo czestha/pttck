@@ -1,0 +1,38 @@
+@use '../abstract/' as *;
+
+button {
+	padding: .5rem 1rem;
+	border-radius: 1rem;
+	border: transparent;
+	font-weight: 600;
+	display: inline-block;
+	@include transition3;
+}
+.bs-lg {
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+}
+
+.bs-red {
+	@extend button;
+	background-color: $red;
+	color: white;
+}
+.bs-red:hover {
+	@include transition3;
+	background-color: darken($red, 10%);
+}
+
+.bs-yellow {
+	@extend button;
+	background-color: $yellow;
+	color: black;
+}
+.bs-yellow:hover {
+	@include transition3;
+	background-color: darken($yellow, 5%);
+}
+
+
+
+

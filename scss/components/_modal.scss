@@ -1,0 +1,61 @@
+@use '../abstract/' as *;
+
+.modal {
+    .modal-header {
+        position: relative;
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+        text-align: left;
+        border-bottom: 1px solid lightgray;
+
+    }
+    .modal-content {
+        height: fit-content;
+
+    }
+    .modal-footer {
+        margin-top: 1rem;
+        padding-top: .5rem;
+        text-align: left;
+        border-top: 1px solid lightgray;
+
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 24px;
+    color: gray;
+    background: none;
+    border: none;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: lightgray;
+}
+
+/* Zaměření na checkboxy pouze s třídou modal-toggle */
+.modal-toggle {
+    appearance: none;
+}
+
+.modal-toggle:checked + .btn-modal + .modal {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: transform .3s ease, opacity .3s ease;
+}
+
+//.modal-toggle:checked + .btn-modal + .modal + .modal-overlay {
+//    visibility: visible; /* Zobrazí pozadí, když je modal otevřen */
+//    //transition: visibility 0s; /* Okamžitě zobrazí pozadí bez delay */
+//}
+
+
+
+
+

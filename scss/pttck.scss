@@ -1,3 +1,12 @@
-.test {
-padding: 0;
-}
+/*
+ * Potato Cake CSS Framework (pttck)
+ * https://github.com/czestha/pttck
+ * Autor: Čestmír Malcher
+ * Verze: 1.0.0
+ * Popis: Lehký a jednoduchý CSS framework pro rychlé stylování.
+ */
+
+@use 'base/index' as *;
+@use 'boiler/index' as *;
+@use 'components/index' as *;
+@use 'layout/index' as *;

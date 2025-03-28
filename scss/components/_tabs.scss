@@ -1,0 +1,12 @@
+@use '../abstract/' as *;
+
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+
+
+
+

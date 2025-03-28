@@ -1,0 +1,18 @@
+@use '../abstract/' as *;
+
+*::-webkit-scrollbar {
+	width: 8px;
+}
+*::-webkit-scrollbar-track {
+	background: whitesmoke; /* Barva pozadí tracku (dráhy scrollbaru) */
+}
+*::-webkit-scrollbar-thumb {
+	background: #007BFFFF; /* Barva samotného scrollbaru */
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: lighten(#007BFFFF, 5); /* Barva při hoveru */
+}
+.scroll-container {
+	scrollbar-width: thin; /* Tenký scrollbar */
+	scrollbar-color: lightgray green; /* Barva scrollbaru a tracku */
+}
