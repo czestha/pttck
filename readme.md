@@ -7,7 +7,7 @@ Ahoj, jsem **Potato Cake** a jsem takový obyčejný CSS framework, který se po
 Můžeš mě snadno přidat do svého projektu pomocí odkazu do hlavičky HTML:
 
 ```html
-<link rel="stylesheet" href="https://github.com/czestha/pttck/raw/main/dist/pttck.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/czestha/pttck/dist/pttck.css">
 ```
 
 Nebo si mě stáhni přímo z repozitáře:

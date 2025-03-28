@@ -6,6 +6,7 @@ button {
 	border: transparent;
 	font-weight: 600;
 	display: inline-block;
+	cursor: pointer;
 	@include transition3;
 }
 .bs-lg {
@@ -20,7 +21,8 @@ button {
 }
 .bs-red:hover {
 	@include transition3;
-	background-color: darken($red, 10%);
+	//background-color: darken($red, 10%);
+	background-color: blue;
 }
 
 .bs-yellow {

@@ -897,6 +897,7 @@ button, .bs-yellow, .bs-red {
   border: transparent;
   font-weight: 600;
   display: inline-block;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -920,7 +921,7 @@ button, .bs-yellow, .bs-red {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: #cc0000;
+  background-color: blue;
 }
 
 .bs-yellow {
